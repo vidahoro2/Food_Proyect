@@ -1,10 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap');
 *{
     box-sizing: border-box;;
     margin: 0;
     padding: 0;
 
 }
+
 html{
     font-size: 62.5%;
-    font-family: 'DM Sans',sans-serif;
+    font-family:Lato ;
+}
+
+.hero-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+    background: papayawhip;
+    grid-auto-rows: 25rem;
+    line-height: 2rem;
+    height: auto;
+    align-content: center;
+}
+h1{
+    text-align: left;
+    color: rgba(9, 65, 23, 0.637);
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+    line-height: 3rem;
+}
+.hero-slider{
+    align-self: center;
+    justify-self: center;
+    margin-left: 6rem;
+}
+.hero-slider p{
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+    line-height: 2.5rem;
+}
+
+.hero-button{
+    background: orange;
+    color: white;
+    font-size: 2rem;
+    border-radius: 30px;
+    border: none;
+    font-weight: bold;
+    padding: 1rem 2rem;
+
+}
+.hero-button:hover{
+    background: rgba(9, 65, 23, 0.637);
+    color: orange;
+}
+
+.container-hero--image{
+    justify-self: flex-start;
+}
+.hero-slider--image{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.our-services{
+    margin: 0rem 3rem;
+}
+h2{
+    font-size: 3rem;
+    color:rgba(9, 65, 23, 0.637);
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.dishes{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 1fr;
+    height: auto;
+    gap: 2rem;
+
+}
+.dishes-item{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.dishes-item--big{
+    grid-area: 1/1/3/3;
+
+}
+.home-menu{
+    background: papayawhip;
+}
+.home-menu-items{
+    display: grid;
+    grid-template-columns: repeat(5,1fr) ;
+    justify-items: center;
+}
+.plate{
+    height: 10rem;
+    width: 10rem;
+    
 }
