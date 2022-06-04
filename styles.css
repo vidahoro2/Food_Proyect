@@ -13,9 +13,9 @@ html{
 
 .hero-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
     background: papayawhip;
-    grid-auto-rows: 25rem;
+    grid-auto-rows: 30rem;
     line-height: 2rem;
     height: auto;
     align-content: center;
@@ -55,7 +55,7 @@ h1{
 }
 
 .container-hero--image{
-    justify-self: flex-start;
+    justify-self: center;
 }
 .hero-slider--image{
     width: 100%;
@@ -78,10 +78,12 @@ h2{
 }
 .dishes{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(10rem,25rem));
     grid-auto-rows: 1fr;
     height: auto;
     gap: 2rem;
+    justify-content: center;
+    margin-bottom: 4rem;
 
 }
 .dishes-item{
@@ -98,14 +100,24 @@ h2{
 }
 .home-menu{
     background: papayawhip;
+    padding: 1rem;
 }
 .home-menu-items{
     display: grid;
-    grid-template-columns: repeat(5,1fr) ;
-    justify-items: center;
+    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit,15rem) ;
+    justify-content: space-evenly;
 }
 .plate{
-    height: 10rem;
-    width: 10rem;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
     
+}
+
+@media screen and (max-with:768px)
+{
+    .dishes{
+        grid-template-columns: repeat(auto-fit,minmax(75px,100px));
+    }    
 }
